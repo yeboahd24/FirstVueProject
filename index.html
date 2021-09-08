@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <title>Random User Generator</title>
+  </head>
+  <body class="row">
+
+    <div class="card grey container">
+      <div class="col s12 m6 blue-grey">
+        <div class="card">
+
+    <div id="apps">
+      <div class="cyan">
+      <img v-bind:src="picture" :alt="firstName" :class="gender"/>
+      </div>
+      <h4>{{firstName}} {{lastName}}</h4>
+
+      <h5>Email: {{email}}</h5>
+      <button v-on:click="getUser()" :class="gender">Get Random User</button>
+    </div>
+      </div>
+    </div>
+    </div>
+  <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  </body>
+</html>
+
