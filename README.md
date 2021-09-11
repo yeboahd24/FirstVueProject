@@ -1,3 +1,3 @@
 # Practical vue projects
 
-<img src='shopping.png' />
+<img src='shoping.png' />
